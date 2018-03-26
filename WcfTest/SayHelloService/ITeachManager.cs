@@ -12,11 +12,13 @@ namespace SayHelloService
     public interface ITeachManager
     {
         [OperationContract]
-        List<Student> GetStudentsByClassId(Guid gidClassId);
-        [OperationContract]
         List<Teacher> GetTeachersByClassId(Guid gidClassId);
         [OperationContract]
         List<Class> GetClassesByTeacherId(Guid gidTeacherId);
 
+        bool GetTeachRelation();
+        bool AddTeachRelation();
+        bool UpdateTeachRelation();
+        bool DeleteTeachRelation();
     }
 }

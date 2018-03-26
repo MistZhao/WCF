@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CClass.cs" />
+    <Compile Include="CStudent.cs" />
+    <Compile Include="CTeacher.cs" />
+    <Compile Include="CTeachManager.cs" />
     <Compile Include="IClass.cs" />
     <Compile Include="IStudent.cs" />
     <Compile Include="ITeacher.cs" />
@@ -59,9 +63,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>echo "copy $(TargetPath) to $(SolutionDir)Exe\Server\"
-copy $(TargetPath) $(SolutionDir)Exe\Server\
-echo "copy $(TargetPath).config to $(SolutionDir)Exe\ServerPrivateConf\"
-copy $(TargetPath).config $(SolutionDir)Exe\ServerPrivateConf\</PostBuildEvent>
+copy $(TargetPath) $(SolutionDir)Exe\Server\</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

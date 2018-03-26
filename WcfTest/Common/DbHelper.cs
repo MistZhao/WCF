@@ -44,6 +44,11 @@ namespace Common
                 return;
             }
 
+            if (strConn.Length > 0)
+            {
+                return;
+            }
+
             switch (eDbType)
             {
                 case ENUM_DBTYPE.SQLSERVER:

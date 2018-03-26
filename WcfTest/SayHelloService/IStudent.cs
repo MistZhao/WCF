@@ -12,7 +12,7 @@ namespace SayHelloService
     public interface IStudent
     {
         [OperationContract]
-        List<Student> GetInfo(string strWhere);
+        List<Student> GetInfo(string strWhere, params object[] objParameters);
         [OperationContract]
         bool Add(Student objStudent);
         [OperationContract]
