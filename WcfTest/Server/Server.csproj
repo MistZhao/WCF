@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,14 +46,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SayHelloService\SayHelloService.csproj">
+      <Project>{70016769-e881-4631-a682-2e5d2f92c7c2}</Project>
+      <Name>SayHelloService</Name>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>echo "copy $(TargetPath) to $(SolutionDir)Exe"
 copy $(TargetPath) $(SolutionDir)Exe
-echo "copy $(TargetPath).config to $(SolutionDir)Exe\PrivateConf"
-copy $(TargetPath).config $(SolutionDir)Exe\PrivateConf</PostBuildEvent>
+echo "copy $(TargetPath).config to $(SolutionDir)Exe\"
+copy $(TargetPath).config $(SolutionDir)Exe\</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -17,7 +17,7 @@ namespace SayHelloService
             DbHelper.InitConnString();
         }
 
-        public List<Student> GetInfo(string strWhere, params object[] objParameters)
+        public List<Student> GetInfo(string strWhere = "", params object[] objParameters)
         {
             string strSql = "select * from Student" + (strWhere.Length == 0 ? "" : " where " + strWhere);
             DataTable dt = DbHelper.ExecuteDataTable(strSql, objParameters);
