@@ -51,6 +51,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{43948175-6791-4b1c-bd69-5d9337aec1d7}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SayHelloService\SayHelloService.csproj">
       <Project>{70016769-e881-4631-a682-2e5d2f92c7c2}</Project>
       <Name>SayHelloService</Name>

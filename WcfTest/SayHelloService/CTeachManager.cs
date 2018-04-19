@@ -29,6 +29,10 @@ namespace SayHelloService
             return new CStudent().GetInfo(strWhere, new SqlParameter("@ClassId", gidClassId));
         }
 
+        /// <summary>
+        /// 获取所有班级对象
+        /// </summary>
+        /// <returns>List</returns>
         public List<Class> GetAllClasses()
         {
             return new CClass().GetInfo();

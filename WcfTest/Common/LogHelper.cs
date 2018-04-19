@@ -12,6 +12,11 @@ namespace Common
     {
         private static log4net.ILog log = LogManager.GetLogger("InfoLogger");
 
+        public static void SetLogger(string strLoggerName)
+        {
+            log = LogManager.GetLogger(strLoggerName);
+        }
+
         public static void Info(string strMsg)
         {
             if (log.IsInfoEnabled)
