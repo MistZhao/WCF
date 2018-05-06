@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="85364bb8-7e55-47c9-9fa3-3001ff1e7802" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="396796c7-bed1-432f-8900-c5ba5b3bca9b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="net.tcp://localhost:1234/TeachManangerService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="a00f3055-554c-4862-8cea-87b1716b1513" SourceId="1" SourceUrl="net.tcp://localhost:1234/TeachManangerService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="5093a680-3a65-4659-b7ca-7aca9850d089" SourceId="1" SourceUrl="net.tcp://localhost:1234/TeachManangerService/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="24e092bc-d3b5-4a67-9d00-e770c57e10eb" SourceId="1" SourceUrl="net.tcp://localhost:1234/TeachManangerService/mex" />
-    <MetadataFile FileName="Entity.xsd" MetadataType="Schema" ID="80d9609c-e818-4286-abeb-6feeba9cbedd" SourceId="1" SourceUrl="net.tcp://localhost:1234/TeachManangerService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="2fac1232-a135-4cca-ba8e-2b6380b2c6ff" SourceId="1" SourceUrl="net.tcp://localhost:1234/TeachManangerService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c208ee70-fc35-4b18-89b3-ad54c37e61d6" SourceId="1" SourceUrl="net.tcp://localhost:1234/TeachManangerService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="5376acc8-8f41-45c4-a93c-a87ae3c30586" SourceId="1" SourceUrl="net.tcp://localhost:1234/TeachManangerService/mex" />
+    <MetadataFile FileName="Entity.xsd" MetadataType="Schema" ID="a98c6f81-8944-4b89-8391-803d9cdbae39" SourceId="1" SourceUrl="net.tcp://localhost:1234/TeachManangerService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -4,14 +4,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Client.TeachManagerProxy;
 
 namespace Client.Controllers
 {
     public class ValuesController : ApiController
     {
-        private TeachManagerClient objClient = new TeachManagerClient();
-
         // GET api/values
         public IEnumerable<string> Get()
         {
